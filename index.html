@@ -2,8 +2,17 @@
 <html lang="pt">
   <head>
     <title>Volta e Meia</title>
-    <link rel="stylesheet" href="Styles/artist_display.css">
     <link rel="stylesheet" href="Objects/button.css">
+    <link rel="stylesheet" href="Styles/artist_display.css">
+
+    <style>
+    @font-face{
+              font-family:'PressStart2P';
+              src: url(fonts/PressStart2P-Regular.ttf);
+              font-style: normal;
+              font-weight: 100;
+            }
+    </style>
 
     <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
@@ -17,13 +26,24 @@
   </head>
 
   <body>
-    <h1>BejaFlor</h1>
-    <img class="bejaflor_pic" src="images/BejaFro.JPG" alt="Um Bejaflor no seu elemento natural">
-    <h2>About Me</h2>
-    <p> Sup dudes, o meu nome é Bejafrô. estou em <a href="https://bejaflor.bandcamp.com" >BandCamp</a>
-    ou em <a href="https://open.spotify.com/artist/01xcxdDLthL6fU4EdSA703?si=PXycW3UqRhCUvJ0ipN1Jvg">Spotify.</a></p>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li><a href="page1.html">Next Artista</a></li>
+      </ul>
+    </nav>
 
-    <button class="button" onclick="window.location.href='https://bejaflor.bandcamp.com';">BandCamp</button>
-    <button class="button" onclick="window.location.href='https://open.spotify.com/artist/01xcxdDLthL6fU4EdSA703?si=PXycW3UqRhCUvJ0ipN1Jvg';">Spotify</button>
+    <header>
+      <h1>BejaFlor</h1>
+    </header>
+    <main>
+      <img class="bejaflor_pic" src="images/BejaFro.JPG" alt="Um Bejaflor no seu elemento natural">
+      <h2>About Me</h2>
+      <p> Sup dudes, o meu nome é Bejafrô. estou em <a href="https://bejaflor.bandcamp.com" >BandCamp</a>
+      ou em <a href="https://open.spotify.com/artist/01xcxdDLthL6fU4EdSA703?si=PXycW3UqRhCUvJ0ipN1Jvg">Spotify.</a></p>
+
+      <button class="button" onclick="window.location.href='https://bejaflor.bandcamp.com';">BandCamp</button>
+      <button class="button" onclick="window.location.href='https://open.spotify.com/artist/01xcxdDLthL6fU4EdSA703?si=PXycW3UqRhCUvJ0ipN1Jvg';">Spotify</button>
+    </main>
   </body>
 </html>
