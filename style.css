@@ -16,12 +16,16 @@ hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padd
 input,select{vertical-align:middle}
 
 #desktop {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: PressStart2P;
     position: fixed;
     height: 100%;
     width: 100%;
     background: #CCC;
-	overflow: hidden;
+		background-image: url("images/windows.jpg");
+		background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+		overflow: hidden;
     top: 0;
     bottom: 0;
     left: 0;
@@ -30,7 +34,7 @@ input,select{vertical-align:middle}
 .window {
     position: absolute;
     border: 2px solid #000;
-    background: #EEE;
+    background: #ACDBC9;
 	border-radius: 5px;
 	z-index: 1000;
 }
@@ -138,7 +142,7 @@ input,select{vertical-align:middle}
 	background: #FFF;
 }
 .taskbarPanel.minimizedTab {
-	background: #AAA;	
+	background: #AAA;
 }
 .taskbarPanel.minimizedTab:hover {
 	background: #DDD;
@@ -150,6 +154,7 @@ input,select{vertical-align:middle}
 	position: absolute;
 	height: 32px;
 	border-top: 2px solid #000;
+	color: blue;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -168,7 +173,7 @@ input,select{vertical-align:middle}
 }
 #icons a:hover {
 	background: #000;
-	color: #FFF;
+	color: yellow;
 }
 #templateLink {
     position: absolute;
@@ -180,9 +185,9 @@ input,select{vertical-align:middle}
     color: #30478c;
 }
 
-/*Demo styles BEGIN*/
+/*INIT WINDOWS*/
 #window0 {	top: 20px;	left: 240px;}
-#window1 {	top: 400px; left: 120px;}
+#window1 {	top: 400px; left: 200px;}
 #window2 {	top: 250px; left: 300px;}
 #window3 {	top: 125px; left: 420px;}
 #window0 .wincontent {	width: 660px; height: 400px;	}
@@ -191,7 +196,7 @@ input,select{vertical-align:middle}
 #window3 .wincontent {	width: 400px; height: 350px;	}
 @media screen and (max-width:960px){
 	#window0 {	left: 10px;	}
-	#window3 {	left: 50px;	}	
+	#window3 {	left: 50px;	}
 }
 @media screen and (max-width:770px){
 	#window0 .wincontent {	width: 460px;	}

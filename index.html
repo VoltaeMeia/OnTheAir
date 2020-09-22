@@ -1,49 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <title>Volta e Meia</title>
-    <link rel="stylesheet" href="Objects/button.css">
-    <link rel="stylesheet" href="Styles/artist_display.css">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Volta e Meia</title>
+	<link rel="stylesheet" href="Objects/button.css">
+	<link rel="stylesheet" href="Styles/artist_display.css">
 
-    <style>
-    @font-face{
-              font-family:'PressStart2P';
-              src: url(fonts/PressStart2P-Regular.ttf);
-              font-style: normal;
-              font-weight: 100;
-            }
-    </style>
+	<style>
+	@font-face{
+						font-family:'PressStart2P';
+						src: url(fonts/PressStart2P-Regular.ttf);
+						font-style: normal;
+						font-weight: 100;
+					}
+	</style>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-    <link rel="manifest" href="icon/site.webmanifest">
-    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="icon/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="icon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-  </head>
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/site.webmanifest">
+	<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="icon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="icon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+</head>
 
-  <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li><a href="page1.html">Next Artista</a></li>
-      </ul>
-    </nav>
+<body>
+	<div id="desktop">
+		<div class="window" data-title="Artista 1">
+			<header>
+	      <h1>BejaFlor</h1>
+	    </header>
+	    <main>
+	      <img class="bejaflor_pic" src="images/BejaFro.JPG" alt="Um Bejaflor no seu elemento natural">
+	      <h2>About Me</h2>
+	      <p> Sup dudes, o meu nome é Bejafrô. estou em <a href="https://bejaflor.bandcamp.com" >BandCamp</a>
+	      ou em <a href="https://open.spotify.com/artist/01xcxdDLthL6fU4EdSA703?si=PXycW3UqRhCUvJ0ipN1Jvg">Spotify.</a></p>
 
-    <header>
-      <h1>BejaFlor</h1>
-    </header>
-    <main>
-      <img class="bejaflor_pic" src="images/BejaFro.JPG" alt="Um Bejaflor no seu elemento natural">
-      <h2>About Me</h2>
-      <p> Sup dudes, o meu nome é Bejafrô. estou em <a href="https://bejaflor.bandcamp.com" >BandCamp</a>
-      ou em <a href="https://open.spotify.com/artist/01xcxdDLthL6fU4EdSA703?si=PXycW3UqRhCUvJ0ipN1Jvg">Spotify.</a></p>
+	      <button class="button" onclick="window.location.href='https://bejaflor.bandcamp.com';">BandCamp</button>
+	      <button class="button" onclick="window.location.href='https://open.spotify.com/artist/01xcxdDLthL6fU4EdSA703?si=PXycW3UqRhCUvJ0ipN1Jvg';">Spotify</button>
+	    </main>
+		</div>
+		<div class="window closed" data-title="Artista 2">
+			<header>
+	      <h1>CO$TGANZA</h1>
+	    </header>
+		</div>
+		<div class="window closed" data-title="Artista 3">
+			<header>
+	      <h1>Gui</h1>
+	    </header>
+		</div>
+		<div class="window closed" data-title="Informação Geral">
+			<p>My bitches is bad and bugie.</p>
+		</div>
 
-      <button class="button" onclick="window.location.href='https://bejaflor.bandcamp.com';">BandCamp</button>
-      <button class="button" onclick="window.location.href='https://open.spotify.com/artist/01xcxdDLthL6fU4EdSA703?si=PXycW3UqRhCUvJ0ipN1Jvg';">Spotify</button>
-    </main>
-  </body>
+		<div id="taskbar">
+		</div>
+
+		<div id="icons">
+			<a class="openWindow" data-id="0">Artista 1</a>
+			<a class="openWindow" data-id="1">Artista 2</a>
+			<a class="openWindow" data-id="2">Artista 3</a>
+			<a class="openWindow" data-id="3">Informação Geral</a>
+		</div>
+	</div>
+</body>
+
 </html>
