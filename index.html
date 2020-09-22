@@ -31,6 +31,31 @@
       }
     </style>
 
+    <style>
+      .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #709fb0;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+
+      .button:hover {background-color: #726a95}
+
+      .button:active {
+        background-color: #726a95;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+    </style>
+
     <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
@@ -49,7 +74,7 @@
     <p> Sup dudes, o meu nome é Bejafrô. estou em <a href="https://bejaflor.bandcamp.com" >BandCamp</a>
     ou em <a href="https://open.spotify.com/artist/01xcxdDLthL6fU4EdSA703?si=PXycW3UqRhCUvJ0ipN1Jvg">Spotify.</a></p>
 
-    <button onclick="window.location.href='https://bejaflor.bandcamp.com';">BandCamp</button>
-    <button onclick="window.location.href='https://open.spotify.com/artist/01xcxdDLthL6fU4EdSA703?si=PXycW3UqRhCUvJ0ipN1Jvg';">Spotify</button>
+    <button class="button" onclick="window.location.href='https://bejaflor.bandcamp.com';">BandCamp</button>
+    <button class="button" onclick="window.location.href='https://open.spotify.com/artist/01xcxdDLthL6fU4EdSA703?si=PXycW3UqRhCUvJ0ipN1Jvg';">Spotify</button>
   </body>
 </html>
