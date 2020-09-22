@@ -191,10 +191,14 @@ input,select{vertical-align:middle}
 #window1 {	top: 400px; left: 200px;}
 #window2 {	top: 250px; left: 300px;}
 #window3 {	top: 125px; left: 420px;}
+#window4 {	top: 125px; left: 420px;}
+#window5 {	top: 125px; left: 420px;}
 #window0 .wincontent {	width: 660px; height: 430px;	}
 #window1 .wincontent {	width: 500px; height: 445px;	}
 #window2 .wincontent {	width: 400px; height: 350px;	}
 #window3 .wincontent {	width: 400px; height: 350px;	}
+#window4 .wincontent {	width: 400px; height: 350px;	}
+#window5 .wincontent {	width: 400px; height: 350px;	}
 @media screen and (max-width:960px){
 	#window0 {	left: 10px;	}
 	#window3 {	left: 50px;	}
